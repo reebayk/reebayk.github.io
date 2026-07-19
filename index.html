@@ -84,18 +84,25 @@
   <section>
     <div class="eyebrow">snapshots</div>
     <h2 class="section-title">Gallery</h2>
-    <p class="section-sub">Drop your own images into the <code>images/gallery/</code> folder and add an <code>&lt;img&gt;</code> tag inside <code>.gallery-grid</code> below — each one auto-styles as a taped-in photo.</p>
+    <p class="section-sub">Drop your own images into <code>images/gallery/</code> and add an <code>&lt;img&gt;</code> tag inside <code>.photo-pile</code> below. Click a photo to open it, then use the arrow keys (or on-screen arrows) to flip through the rest.</p>
 
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="images/gallery/photo1.jpg" alt=""></div>
-      <div class="gallery-item"><img src="images/gallery/photo2.jpg" alt=""></div>
-      <div class="gallery-item"><img src="images/gallery/photo3.jpg" alt=""></div>
-      <div class="gallery-item"><img src="images/gallery/photo4.jpg" alt=""></div>
-      <div class="gallery-item"><img src="images/gallery/photo5.jpg" alt=""></div>
-      <div class="gallery-item"><img src="images/gallery/photo6.jpg" alt=""></div>
+    <div class="photo-pile" id="photoPile">
+      <div class="pile-item"><img src="images/gallery/photo1.jpg" alt=""></div>
+      <div class="pile-item"><img src="images/gallery/photo2.jpg" alt=""></div>
+      <div class="pile-item"><img src="images/gallery/photo3.jpg" alt=""></div>
+      <div class="pile-item"><img src="images/gallery/photo4.jpg" alt=""></div>
+      <div class="pile-item"><img src="images/gallery/photo5.jpg" alt=""></div>
+      <div class="pile-item"><img src="images/gallery/photo6.jpg" alt=""></div>
     </div>
   </section>
 </main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Previous">←</button>
+  <img class="lb-img" id="lbImg" src="" alt="">
+  <button class="lb-arrow lb-next" id="lbNext" aria-label="Next">→</button>
+</div>
 
 <footer class="wrap">
   <span>© 2026 Areeba Kalwar. Built with too much coffee.</span>
