@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Areeba Kalwar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">AK/</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" style="padding-bottom:10px;">
+    <div class="eyebrow">./projects</div>
+    <h1 style="font-size:clamp(2.2rem, 5vw, 3.4rem);">Built, broken, <span class="grad">fixed, and shipped.</span></h1>
+    <p class="lede">Two projects that show the range: one is about making concurrent systems provably correct, the other is about designing a network people can trust.</p>
+  </section>
+
+  <section style="padding-top:10px;">
+    <div class="proj-card" style="margin-bottom:24px;">
+      <div class="eyebrow">systems / concurrency</div>
+      <h2 style="font-size:1.6rem;">🏨 Multithreaded Hotel Reservation System</h2>
+      <p style="color:var(--muted); max-width:640px;">A thread-safe hotel reservation system built in C using POSIX Threads. Went through multiple debugging passes to land on a single mutex protecting all shared state, so an auditor always reads a fully consistent snapshot — no overbooking, no race conditions, verified under stress testing.</p>
+      <div style="margin:16px 0 20px;">
+        <span class="proj-tag">C</span>
+        <span class="proj-tag">POSIX Threads</span>
+        <span class="proj-tag">Linux</span>
+        <span class="proj-tag">Helgrind</span>
+        <span class="proj-tag">ThreadSanitizer</span>
+      </div>
+      <a class="btn btn-solid" href="https://github.com/reebayk/multithreaded-hotel-reservation-system" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="proj-card">
+      <div class="eyebrow">networking / security</div>
+      <h2 style="font-size:1.6rem;">🌐 Secure Campus Network</h2>
+      <p style="color:var(--muted); max-width:640px;">A full university campus network topology designed in Cisco Packet Tracer — VLAN segmentation, 802.1Q trunking, Router-on-a-Stick inter-VLAN routing, and ACL-based security policy tying it all together.</p>
+      <div style="margin:16px 0 20px;">
+        <span class="proj-tag">Cisco Packet Tracer</span>
+        <span class="proj-tag">VLANs</span>
+        <span class="proj-tag">ACLs</span>
+        <span class="proj-tag">802.1Q</span>
+        <span class="proj-tag">Cisco IOS</span>
+      </div>
+      <a class="btn btn-solid" href="https://github.com/reebayk/secure-campus-network" target="_blank">View on GitHub →</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">elsewhere</div>
+    <h2 class="section-title">Where else I compete & build</h2>
+    <div class="contact-grid">
+      <a class="contact-card" href="https://github.com/reebayk" target="_blank">
+        <div><div class="label">GITHUB</div><div class="value">@reebayk</div></div>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="contact-card" href="https://leetcode.com/u/reebayk/" target="_blank">
+        <div><div class="label">LEETCODE</div><div class="value">reebayk</div></div>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="contact-card" href="https://codeforces.com/profile/bayk" target="_blank">
+        <div><div class="label">CODEFORCES</div><div class="value">bayk</div></div>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/reebayk" target="_blank">
+        <div><div class="label">LINKEDIN</div><div class="value">in/reebayk</div></div>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Areeba Kalwar. Built with too much coffee.</span>
+  <span>
+    <a href="mailto:reebayk05@gmail.com">Email</a> ·
+    <a href="https://www.linkedin.com/in/reebayk" target="_blank">LinkedIn</a> ·
+    <a href="https://github.com/reebayk" target="_blank">GitHub</a>
+  </span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
