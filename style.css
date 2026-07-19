@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root{
-  --ink:#180F22;
-  --surface:#241832;
-  --surface-2:#2E1F40;
-  --violet:#9B6BFF;
-  --pink:#F0479C;
-  --orange:#FF8A3D;
-  --cream:#FDF6F0;
-  --muted:#B9A8CE;
-  --line: rgba(253,246,240,0.14);
+  --ink:#0B1712;
+  --surface:#12241B;
+  --surface-2:#173021;
+  --violet:#0F9D58;
+  --pink:#22C55E;
+  --orange:#5EEBA0;
+  --cream:#F2FBF5;
+  --muted:#A9C4B2;
+  --line: rgba(242,251,245,0.14);
   --grad: linear-gradient(115deg, var(--violet) 0%, var(--pink) 55%, var(--orange) 100%);
 }
 
@@ -34,9 +34,9 @@ body::before{
   z-index:0;
   pointer-events:none;
   background:
-    radial-gradient(600px 400px at 85% -5%, rgba(155,107,255,0.35), transparent 60%),
-    radial-gradient(500px 350px at -5% 20%, rgba(240,71,156,0.25), transparent 60%),
-    radial-gradient(550px 400px at 100% 90%, rgba(255,138,61,0.2), transparent 60%);
+    radial-gradient(600px 400px at 85% -5%, rgba(15,157,88,0.35), transparent 60%),
+    radial-gradient(500px 350px at -5% 20%, rgba(34,197,94,0.25), transparent 60%),
+    radial-gradient(550px 400px at 100% 90%, rgba(94,235,160,0.2), transparent 60%);
 }
 
 h1,h2,h3,h4{
